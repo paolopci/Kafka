@@ -1,7 +1,6 @@
-﻿namespace ClassLibrary1
+namespace Post.Common
 {
     public class Class1
     {
-
     }
 }
