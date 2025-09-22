@@ -6,9 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <!-- Exclude legacy sub-project files from compilation -->
   <ItemGroup>
-    <ProjectReference Include="..\..\..\CORS-ES\CQRS.Core\CQRS.Core.csproj" />
-    <ProjectReference Include="..\..\..\Post.Common\Post.Common.csproj" />
+    <Compile Remove="Post.Cmd.Domain\**\*.cs" />
+    <Compile Remove="**\obj\**\*.cs" />
+    <Compile Remove="**\bin\**\*.cs" />
   </ItemGroup>
 
 </Project>
