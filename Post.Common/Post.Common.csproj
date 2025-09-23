@@ -12,5 +12,8 @@
     <Compile Remove="**\obj\**\*.cs" />
     <Compile Remove="**\bin\**\*.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CORS-ES\CQRS.Core\CQRS.Core.csproj" />
+  </ItemGroup>
 
 </Project>
